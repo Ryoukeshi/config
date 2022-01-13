@@ -8,8 +8,8 @@ spring:
                 git:
                     uri: https://github.com/Ryoukeshi/config-data.git
                     searchPaths: configs
-                    username: 
-                    password: 
+                    username: andre
+                    password: andre
                     default-label: "main"
 
     security:
