@@ -66,10 +66,10 @@ jobs:
         uses: steebchen/kubectl@v2.0.0
         with:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
-          command: set image --record deployment/config config=bonfaier/config:main
+          command: set image --record deployment/configserver configserver=bonfaier/config:main
       - name: verify deployment
         uses: steebchen/kubectl@v2.0.0
         with:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
           version: v1.21.0
-          command: rollout status deployment/config
+          command: rollout status deployment/configserver
